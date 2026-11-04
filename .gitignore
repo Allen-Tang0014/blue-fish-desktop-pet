@@ -1,0 +1,12 @@
+# 运行产物与本地数据（不要提交）
+node_modules/
+.dsh-home/
+logs/
+npm-cache/
+*.log
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini

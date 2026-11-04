@@ -1,0 +1,15 @@
+{
+  "pets": [
+    {
+      "id": "main",
+      "name": "蓝色大肥鱼",
+      "size": 462,
+      "balanceEnabled": false,
+      "whisperEnabled": false,
+      "workStatusEnabled": false,
+      "fixedEnabled": false,
+      "display": "desktop",
+      "position": { "corner": "bottom-right", "marginX": 24, "marginY": 24 }
+    }
+  ]
+}

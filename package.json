@@ -1,0 +1,20 @@
+{
+  "name": "blue-fish-desktop-pet",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Standalone desktop pet (blue fish maid) extracted from dsh-pet: no DeepSeek Harness needed, with a quit menu and desktop shortcuts.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "setup": "powershell -NoProfile -ExecutionPolicy Bypass -File ./setup.ps1",
+    "start": "node node_modules/dsh-pet/lib/standalone.js --port 3080",
+    "stop": "powershell -NoProfile -ExecutionPolicy Bypass -File ./stop-pet.ps1",
+    "patch": "node ./patches/apply-patches.mjs",
+    "fetch-electron": "node node_modules/dsh-pet/scripts/ensure-electron.mjs"
+  },
+  "dependencies": {
+    "dsh-pet": "0.3.7"
+  }
+}
